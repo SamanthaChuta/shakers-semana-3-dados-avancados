@@ -6,6 +6,7 @@ Este projeto faz parte do Desafio da Semana 3, com foco em Metafields e Metaobje
 
 ## O que foi implementado
 Metafields: Permite armazenar dados personalizados no Shopify, estendendo informações de produtos, coleções, pedidos, etc. (Utilizado no desafio para armazenar uma lista de metaobjetos)
+
 Metaobjetos: São estruturas de dados reutilizáveis, ideiais para representar entidades personalizadas. (Utilizadas no projeto para relacionar um produto e uma imagem)
 
 - Criação e estruturação de Metafields
