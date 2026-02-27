@@ -1,7 +1,8 @@
-{% assign product_handle = section.settings.product %}
-{% assign product = all_products[product_handle] %}
 {{ 'metaobject-slider.js' | asset_url |  script_tag }}
 {{ 'metaobject-slider.css' | asset_url |  script_tag }}
+
+{% assign product_handle = section.settings.product %}
+{% assign product = all_products[product_handle] %}
 
 
 {% assign list_product = product.metafields.custom.produtos_relacionados.value %}
@@ -12,11 +13,10 @@
   href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
 />
 <link rel="stylesheet" href="../assets/metaobject-slider.css">
-    <!-- Slider main container -->
+
     <div class="swiper">
-        <!-- Additional required wrapper -->
+
         <div class="swiper-wrapper">
-            <!-- Slides -->
             {% for product_with_banner in list_product %}
                 {% assign banner = product_with_banner.imagem %}
                 {% assign product_b_handle = product_with_banner.produto %}
@@ -28,16 +28,12 @@
             </a>
             </div>
         {% endfor %}
-        
         </div>
-        <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
         
-        <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
         
-        <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
         </div>
         
